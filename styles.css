@@ -1,0 +1,167 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #03131e;
+    color: #ffffff;
+}
+
+.title, h1, h2, h3, h4, h5, h6 {
+    color: #11b7a3;
+}
+
+.title:hover {
+    color: #17e0c7;
+}
+
+#game-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #3d4957;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #061c2f;
+    transition: transform 0.2s;
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+}
+
+.game-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.game-item h2 {
+    margin: 10px 0;
+}
+
+.game-item p {
+    font-size: 14px;
+    color: #3d4957;
+}
+
+.np-button {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.purple-btn {
+    background-color: #291f43;
+    color: #7c4f93;
+}
+
+.purple-btn:hover {
+    background-color: #4c2e6a;
+}
+
+.purple-btn:disabled:hover {
+    background-color: #291f43;
+}
+
+.green-btn {
+    background-color: #003537;
+    color: #319e96;
+}
+
+.green-btn:hover {
+    background-color: #005652;
+}
+
+.green-btn:disabled:hover {
+    background-color: #003537;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.heading .icon {
+    height: 2.5em;
+    fill: #424c5c;
+}
+
+.heading .icon:hover {
+    fill: gray;
+}
+
+.heading a {
+    text-decoration: none;
+}
+
+.subheading {
+    color: gray;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #3d4957;
+}
+
+footer a {
+    color: #667080;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#credits {
+    color: #3d4957;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer:hover + #credits {
+    opacity: 1;
+}
+
+.left-side-image {
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    height: 50%;
+    width: auto;
+    opacity: 20%;
+    z-index: -1;
+}
